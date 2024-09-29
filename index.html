@@ -56,20 +56,34 @@
 
 <body class="inter">
   <header>
-    <nav class="px-20 bg-[#0C4B54] py-5">
+    <nav class="px-4 md:px-20 bg-[#0C4B54] py-5">
       <div class="navbar bg-[#0C4B54]">
         <div class="navbar-start">
-          <img src="images/image 2.png" alt="">
+          <img src="images/image 2.png" alt="Logo">
         </div>
         <div class="navbar-end">
-          <ul class="menu menu-horizontal gap-10 px-1 text-lg font-medium text-white ">
+          <!-- Hamburger menu button for mobile -->
+          <div class="dropdown dropdown-end md:hidden">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#0C4B54] rounded-box w-52">
+              <li><a class="text-white">Home</a></li>
+              <li><a class="text-white">About</a></li>
+              <li><a class="text-white">Services</a></li>
+              <li><a class="text-white">Work</a></li>
+              <li><a class="text-white">Contact</a></li>
+            </ul>
+          </div>
+          <!-- Regular menu for larger screens -->
+          <ul class="menu menu-horizontal gap-10 px-1 text-lg font-medium text-white hidden lg:flex">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Services</a></li>
             <li><a>Work</a></li>
-            <li><a
-                class="bg-transparent  border-2 border-[#E8F549] px-10 font-medium rounded-full hover:text-[#0C4B54] hover:bg-[#E8F549]">Contact</a>
-            </li>
+            <li><a class="bg-transparent border-2 border-[#E8F549] px-10 font-medium rounded-full hover:text-[#0C4B54] hover:bg-[#E8F549]">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -136,66 +150,64 @@
     </section>
     <!-- My Services  -->
     <section class="my-28">
-      <div class="hero my-10">
+      <div class="hero">
         <div class="hero-content text-center">
           <div class="max-w-7xl">
             <p class="mb-10 text-xl font-medium">My Services<span class="pl-5">———</span></p>
-            <h1 class="text-5xl font-bold">What Can I Do?</h1>
+            <h1 class="text-5xl font-bold mb-16">What Can I Do?</h1>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Cards  -->
-    <section>
-      <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-4 ">
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure class="">
-            <img class="w-40" src="images/brand design.png" alt="">
+      
+      <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img class="w-40" src="images/brand design.png" alt="Brand Design">
           </figure>
           <div class="card-body">
             <h2 class="card-title">Brand Design</h2>
             <p class="pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus.</p>
             <div class="card-actions">
-              <button class="">Read More</bu h-30 <path stroke-linecap="round" stroke-linejoin="round"
-                  d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-                </svg>
-
+              <button class="btn">Read More</button>
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="w-40" src="images/Web Design.png" alt="">
+        
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img class="w-40" src="images/Web Design.png" alt="Web Design">
           </figure>
           <div class="card-body">
             <h2 class="card-title">Web Design</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sint.</p>
+            <p class="pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, sint.</p>
             <div class="card-actions">
-              <button class="">Read More</button>
+              <button class="btn">Read More</button>
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="w-40" src="images/Graphic Design.png" alt="">
+        
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img class="w-40" src="images/Graphic Design.png" alt="Graphic Design">
           </figure>
           <div class="card-body">
             <h2 class="card-title">Graphic Design</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, cum!</p>
+            <p class="pb-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, cum!</p>
             <div class="card-actions">
-              <button class="">Read More</button>
+              <button class="btn">Read More</button>
             </div>
           </div>
         </div>
-        <div class="card bg-base-100 w-96 shadow-xl">
-          <figure>
-            <img class="w-40" src="images/web development.png" alt="">
+        
+        <div class="card bg-base-100 shadow-xl">
+          <figure class="pt-10">
+            <img class="w-40" src="images/web development.png" alt="Web Development">
           </figure>
           <div class="card-body">
             <h2 class="card-title">Web Development</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolor?</p>
+            <p class="pb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolor?</p>
             <div class="card-actions">
-              <button class="">Read More</button>
+              <button class="btn">Read More</button>
             </div>
           </div>
         </div>
